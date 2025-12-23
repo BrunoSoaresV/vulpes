@@ -70,10 +70,8 @@ const CardForm = ({ modalChangers }: modalType) => {
                     {/* <Button type='submit' onClick={() => setTimeout(() => modalChangers(true), 1500)} className={styles.button} disabled={!isFormValid()}><div className={styles.legend__button}><b>QUERO PARTICIPAR DO BUSINESS CLASS</b></div></Button> */}
                     <Button className={styles.button}>
                         <div className={styles.legend__button}>
-                            <Link href="https://sun.eduzz.com/1897833" target='_blank'>
-                                <a target="_blank" rel="noopener noreferrer" className={styles.remove__style}>
-                                    <b>ACESSAR O BUSINESS CLUB</b>
-                                </a>
+                            <Link href="https://sun.eduzz.com/1897833" target='_blank' rel="noopener noreferrer" className={styles.remove__style}>
+                                <b>ACESSAR O BUSINESS CLUB</b>
                             </Link>
                         </div>
                     </Button>

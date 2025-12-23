@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import Image from 'next/image';
 import { FaEllipsisH } from "react-icons/fa";
 import { FcLike } from "react-icons/fc";
-import { TbMessageCircle2 } from "react-icons/tb";
+import { TbMessageCircle } from "react-icons/tb";
 import { FiSend } from "react-icons/fi";
 import { HiOutlineBookmark } from "react-icons/hi";
 
@@ -29,7 +29,7 @@ const InstaPost = (props: AtributPost) => {
                     </div>
                     vulpesidiomas
                 </div>
-                <FaEllipsisH /> 
+                <FaEllipsisH />
             </div>
             <div className={styles.body}>
                 <Image
@@ -43,7 +43,7 @@ const InstaPost = (props: AtributPost) => {
                 <div className={styles.icons_line}>
                     <div className={styles.join}>
                         <FcLike />
-                        <TbMessageCircle2 />
+                        <TbMessageCircle size={28} />
                         <FiSend />
                     </div>
 

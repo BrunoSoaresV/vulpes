@@ -15,11 +15,9 @@ const HeadFooter = ({ modalChangers }: modalType) => {
                 </Button> */}
                 <Button className={styles.button}>
                     <div className={styles.legend__button}>
-                        <Link href="https://sun.eduzz.com/1897833" target='_blank'>
-                            <a target="_blank" rel="noopener noreferrer" className={styles.remove__style}>
-                                <b>ACESSAR O BUSINESS CLUB</b>
-                                <HiArrowNarrowLeft className={styles.icon} />
-                            </a>
+                        <Link href="https://sun.eduzz.com/1897833" target='_blank' rel="noopener noreferrer" className={styles.remove__style}>
+                            <b>ACESSAR O BUSINESS CLUB</b>
+                            <HiArrowNarrowLeft className={styles.icon} />
                         </Link>
                     </div>
                 </Button>

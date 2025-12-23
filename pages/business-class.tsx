@@ -21,7 +21,7 @@ import { useState } from "react";
 
 
 const LandingPage: NextPage = () => {
-    const[modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const modalChanger = (args: boolean) => {
         setModalIsOpen(args);
@@ -33,28 +33,32 @@ const LandingPage: NextPage = () => {
                 <title>Vulpes Business Class</title>
                 <link rel="shortcut icon" href="/fav-icon-vulpes-azul.png" />
             </Head>
-            <Header modalChangers={modalChanger}/>
+            <Header modalChangers={modalChanger} />
             <DataView />
-            <Presentation modalChangers={modalChanger}/>
+            <Presentation modalChangers={modalChanger} />
             <SpeakerView />
             <LearnCardsView />
             <BonusView />
-            <StakeholdersView modalChangers={modalChanger}/>
+            <StakeholdersView modalChangers={modalChanger} />
             <InspirationView />
-            <FooterView modalChangers={modalChanger}/>
+            <FooterView modalChangers={modalChanger} />
             {modalIsOpen && (
-                <PassportSession modalChangers={modalChanger}/>
+                <PassportSession modalChangers={modalChanger} />
             )}
 
-            <Link href="https://chat.whatsapp.com/JVsaxpR9svH4o7zAei4eU8">
-                <a target="_blank" rel="noopener noreferrer" className={styles.img__wpp__group}>
-                    <Image
+            <Link
+                href="https://chat.whatsapp.com/JVsaxpR9svH4o7zAei4eU8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.img__wpp__group}>
+
+                <Image
                     src={img_wpp_group}
                     alt="Imagem icone Grupo de Whatsapp"
                     width={47}
                     height={46}
-                    />
-                </a>
+                />
+
             </Link>
         </ContentContainer>
     );
