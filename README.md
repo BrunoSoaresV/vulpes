@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vulpes
 
-## Getting Started
+**Vulpes** is an English school with personalized teaching for each student, with a very strong focus on the technology market.
 
-First, run the development server:
+This project was developed in collaboration with the school and its code was made open-source to serve as **inspiration** for other developers who want to build similar websites.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> [!IMPORTANT]
+> **Usage Notice**
+> This repository is intended for **reference** only. It should not be copied identically. Feel free to study the structure and the technologies used, but please respect the brand's visual identity and original purpose.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Technologies Used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The project was built using the following technologies:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** CSS Modules & [Bootstrap](https://getbootstrap.com/)
+- **Frontend:** [React](https://reactjs.org/)
+- **Backend/DB:** [Firebase](https://firebase.google.com/)
+- **Animations:** [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🛠️ How to Run the Project
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/victorradael/vulpes.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Open `http://localhost:3000` in your browser.
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for more details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
