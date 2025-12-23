@@ -17,6 +17,7 @@
     color: #FFFFFF;
 }
 
+
 .conduction__stroke {
     position: absolute;
     top: -4rem;
@@ -26,9 +27,11 @@
 @media (max-width: 1350px) {
     .container {
         height: auto;
-        padding-block: 7rem;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
     }
 }
+
 
 @media (max-width: 1000px) {
     .container {
@@ -52,7 +55,7 @@
     .container {
         background-size: 56%;
         margin-block: -1rem;
-        border-radius: 1rem;
+        border-radius: 2rem;
     }
 
     .conduction__stroke {

@@ -24,13 +24,11 @@ const Stakeholders = ({ modalChangers }: modalType) => {
                     <p className={styles.card}>Não é para quem encara o inglês como um obstáculo e está disposto a abrir mão de grandes avanços e oportunidades que só conseguiria com um inglês bem trabalhado.</p>
                 </div>
             </div>
-            
+
             <Button className={styles.button}>
                 <div className={styles.legend__button}>
-                    <Link href="https://sun.eduzz.com/1897833" target='_blank'>
-                        <a target="_blank" rel="noopener noreferrer" className={styles.remove__style}>
-                            <b>ACESSAR O BUSINESS CLUB</b>
-                        </a>
+                    <Link href="https://sun.eduzz.com/1897833" target='_blank' rel="noopener noreferrer" className={styles.remove__style}>
+                        <b>ACESSAR O BUSINESS CLUB</b>
                     </Link>
                 </div>
             </Button>

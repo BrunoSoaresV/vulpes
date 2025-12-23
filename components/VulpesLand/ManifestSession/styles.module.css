@@ -21,26 +21,38 @@
 }
 
 .insignia__image {
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    -khtml-user-select: none;
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
 }
 
 .rebecca__pic {
     border-radius: 0 0 40rem 40rem;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    -khtml-user-select: none;
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
 }
 
 .know__more {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .paragr__place {
@@ -63,7 +75,7 @@
     display: flex;
     align-items: center;
     gap: .8rem;
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
     margin-bottom: 1rem;
 }
 
@@ -77,12 +89,18 @@
     right: -7rem;
     bottom: -6rem;
 
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    -khtml-user-select: none;
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
 }
 
 @media (max-width: 1500px) {
@@ -94,12 +112,16 @@
 @media (max-width: 1350px) {
     .container {
         flex-direction: column;
-        background-color: #0f0f0fb0;
-        border-radius: 1rem 1rem 0 0;
+        background-color: transparent !important;
+        border-radius: 2rem;
+        width: 100%;
+        overflow: hidden;
     }
 
     .rebecca__pic {
-        width: 400px;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
     }
 
     .know__more__session {
@@ -107,25 +129,32 @@
         padding-top: 2rem;
     }
 
-    .know__more__session :nth-child(1) { order: 2; }
+    .know__more__session :nth-child(1) {
+        order: 2;
+    }
 
     .paragr__place {
-        margin-top: -5rem;
+        background-color: transparent !important;
+        border: none !important;
+        margin-top: 1rem;
         margin-left: 0;
-        padding-inline: 2rem;
-        border-radius: 0 0 1rem 1rem;
+        padding-inline: 1.5rem;
+        border-radius: 0;
         z-index: 999;
     }
 }
 
+
+
 @media (max-width: 760px) {
     .main__box {
         flex-direction: column;
-        width: 80vw;
+        width: 100%;
     }
 
     .paragr__place {
-        width: 80vw;
+        width: 100%;
+        padding-inline: 1.5rem;
     }
 
     .insignia__image {
@@ -133,41 +162,23 @@
     }
 
     .rebecca__pic {
-        width: 220px;
+        width: 100%;
+        max-width: 500px;
     }
 
-    .know__more {
-        font-size: clamp(1rem, 3vw, 1.2rem);
-    }
-    
     .sparkles__image {
-        width: 60px;
-        right:auto;
-        left: 74vw;
+        display: none;
     }
-    
-    .title__manifest {
-        font-size: clamp(1rem, 3vw, 1.2rem);
-    }
-    
+
     .paragr {
-        font-size: clamp(.8rem, 3vw, 1rem);
+        font-size: clamp(1rem, 2.8vw, 1.2rem);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
     }
-}
 
-
-@media (max-width: 430px) {
-    .sparkles__image {
-        width: 60px;
-        right:auto;
-        left: 90vw;
-    }
-}
-
-@media (max-width: 370px) {
-    .sparkles__image {
-        width: 60px;
-        right:auto;
-        left: 100vw;
+    .title__manifest {
+        font-size: clamp(1.4rem, 4vw, 1.8rem);
+        margin-bottom: 2rem;
+        justify-content: center;
     }
 }

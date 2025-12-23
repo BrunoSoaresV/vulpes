@@ -26,11 +26,9 @@ const IndividualTrailContent = (props: IndividualTrailContentProps) => {
         })}
         <Button className={styles.button}>
           <div className={styles.legend__button}>
-            <Link href={trail.buttonLink} target='_blank'>
-              <a target="_blank" rel="noopener noreferrer" className={styles.remove__style}>
+            <Link href={trail.buttonLink} target='_blank' rel="noopener noreferrer" className={styles.remove__style}>
               {trail.buttonTitle}
-              <FiArrowUpRight className={styles.link__arrow}/>
-              </a>
+              <FiArrowUpRight className={styles.link__arrow} />
             </Link>
           </div>
         </Button>
@@ -39,7 +37,7 @@ const IndividualTrailContent = (props: IndividualTrailContentProps) => {
         <div className={styles.trail__img}>
           <Image
             src={trail.image}
-            alt={'icon of '+ trail.name + 'trail of Vulpes'}
+            alt={'icon of ' + trail.name + 'trail of Vulpes'}
             width={trail.imgWidth}
             height={trail.imgHeight}
           />

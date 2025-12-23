@@ -5,7 +5,8 @@
     height: 100%;
 }
 
-.color__1, .color__2 {
+.color__1,
+.color__2 {
     fill: #04152f;
     -webkit-transition: fill .7s ease-out;
     -moz-transition: fill .7s ease-out;
@@ -13,7 +14,8 @@
     transition: fill .7s ease-out;
 }
 
-.svg__logo, .svg__name {
+.svg__logo,
+.svg__name {
     height: 3rem;
 }
 
@@ -25,11 +27,12 @@
     .svg__name {
         display: none;
     }
-    
+
     .svg__hamburguer {
-        display: flex;
+        display: none !important;
     }
 }
+
 
 .container:hover {
     cursor: pointer;
@@ -37,6 +40,7 @@
     .color__1 {
         fill: #ffc110;
     }
+
     .color__2 {
         fill: #ffda75;
     }

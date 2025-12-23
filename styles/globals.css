@@ -26,6 +26,7 @@ a {
   box-sizing: border-box;
 }
 
+
 body div {
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 import modalType from '../../interface/modalType';
 import Link from 'next/link';
 
-const PresentationText = ({modalChangers}: modalType) => {
+const PresentationText = ({ modalChangers }: modalType) => {
     return (
         <div className={styles.container}>
             <div className={styles.reduce__area}>
@@ -15,10 +15,8 @@ const PresentationText = ({modalChangers}: modalType) => {
                 <div className={styles.centralize__button}>
                     <Button className={styles.button}>
                         <div className={styles.legend__button}>
-                            <Link href="https://sun.eduzz.com/1897833" target='_blank'>
-                                <a target="_blank" rel="noopener noreferrer" className={styles.remove__style}>
-                                    <b>ACESSAR O BUSINESS CLUB</b>
-                                </a>
+                            <Link href="https://sun.eduzz.com/1897833" target='_blank' rel="noopener noreferrer" className={styles.remove__style}>
+                                <b>ACESSAR O BUSINESS CLUB</b>
                             </Link>
                         </div>
                     </Button>

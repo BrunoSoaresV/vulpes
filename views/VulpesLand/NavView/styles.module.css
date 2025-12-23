@@ -6,9 +6,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    overflow-y: hidden;
+    overflow-y: visible;
     background-color: #fff8e3;
     border-block: .05rem var(--placeholder) solid;
-    z-index: 999;
+    z-index: 1000;
 }
-
