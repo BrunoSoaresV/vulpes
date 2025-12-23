@@ -1,15 +1,15 @@
 .container {
-    height: 40rem;
-    width: 86rem;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    max-width: 86rem;
+    min-height: 40rem;
+    padding: 2rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     overflow: hidden;
-    
     letter-spacing: -.05rem;
 }
 
@@ -17,38 +17,51 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: -8rem 0 0 8rem;
+    margin: 0;
+    z-index: 2;
 }
+
+/* Desktop alignment */
+@media (min-width: 1025px) {
+    .intro {
+        margin-top: -8rem;
+        margin-left: 8rem;
+    }
+}
+
 
 .gray {
     color: #A2A2A280;
     font-size: 2rem;
-    
     min-height: 48px;
     animation: opac 3.5s linear infinite;
 }
 
 @keyframes opac {
-	0% {
-		opacity: 0%;
-	}
-	20% {
-		opacity: 100%;
-	}
-	30% {
-		opacity: 100%;
-	}
-	80% {
-		opacity: 0%;
-	}
-	100% {
-		opacity: 0%;
-	}
+    0% {
+        opacity: 0%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    30% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
 }
 
 .title {
     margin: 0;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-family: 'Sora', sans-serif;
     letter-spacing: -.2rem;
 }
@@ -71,86 +84,23 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 .paragr {
-    font-size: 2rem;
-    width: 30rem;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    width: 100%;
+    max-width: 30rem;
 }
 
 .cta__paragr {
-    width: 24vw;
+    width: auto;
+    max-width: 25rem;
     margin: 0;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-.know__more__session {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.image__circle_1 {
-    border-collapse: collapse;
-    border: .1rem solid #ffc110 ;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-right: -1rem;
-    z-index: 7;
-
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.image__circle_2 {
-    border-collapse: collapse;
-    border: .1rem solid #ffc110 ;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-right: -1rem;
-    z-index: 8;
-
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.image__circle_3 {
-    border-collapse: collapse;
-    border: .1rem solid #ffc110 ;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-right: -1rem;
-    z-index: 9;
-
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.image__circle_4 {
-    border-collapse: collapse;
-    border: .1rem solid #ffc110 ;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    z-index: 10;
-
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
 
 .students__line {
     display: flex;
@@ -158,120 +108,52 @@
     gap: 0rem;
 }
 
+.image__circle_1,
+.image__circle_2,
+.image__circle_3,
+.image__circle_4 {
+    border: .1rem solid #ffc110;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: -0.8rem;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
 .group__vulpes {
     top: 5rem;
     right: 6rem;
     position: absolute;
+    display: none;
+    /* Hidden on mobile by default if needed, or preserved for desktop */
 }
 
-.retangulos {
-    top: 0;
-    right: 0;
-    position: absolute;
+@media (min-width: 1024px) {
+    .group__vulpes {
+        display: block;
+    }
 }
 
-
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-1.6rem);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-@media (max-width: 1500px) {
+@media (max-width: 1024px) {
     .container {
-        width: 96%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {
-        height: 64vw;
-    }
-
-    .intro {
-        margin: 0 0 0 4rem;
-    }
-
-    .gray {
-        color: #A2A2A2;
-        font-size: clamp(1.2rem, 3vw, 2rem);
-    }
-
-    .title {
-        font-size: clamp(2rem, 5vw, 4rem);
-    }
-
-    .paragr {
-        font-size: clamp(1.4rem, 3vw, 2rem);
-        width: 64%;
-    }
-
-    .cta__paragr {
-        width: 30vw;
-        font-size: clamp(0.7rem, 1.5vw, 1rem);
-    }
-}
-
-@media (max-width: 760px) {    
-    .container {
-        height: 90vw;
+        min-height: auto;
+        padding-block: 4rem;
         justify-content: center;
+        text-align: center;
     }
-    
+
     .intro {
         align-items: center;
-        margin: 0;
-        background-color: #f5f5f593;
-        border-radius: 2rem;
     }
 
-    .gray {
-        min-height: 32px;
+    .vulpes_students__line {
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
     }
 
     .paragr {
-        font-size: clamp(1rem, 3vw, 1.6rem);
-        text-align : center;
-        margin-bottom: .8rem;
-    }
-    
-    .vulpes_students__line {
-        flex-direction: column-reverse;
-        margin-bottom: 20%;
-        gap: 0rem;
-    }
-
-    .cta__paragr {
-        text-align : center;
-    }
-
-    .image__circle_1,
-    .image__circle_2,
-    .image__circle_3,
-    .image__circle_4 {
-        width: 2rem;
-    }
-
-    .know__more__session {
-        font-size: clamp(.8rem, 2vw, 1rem);
-        gap: .2rem;
-    }
-}
-
-
-@media (max-width: 430px) {
-    .vulpes_students__line {
-        gap: .8rem;
-    }
-
-    .cta__paragr {
-        width: 48vw;
+        margin-inline: auto;
     }
 }

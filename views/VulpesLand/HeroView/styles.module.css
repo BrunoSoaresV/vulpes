@@ -1,20 +1,27 @@
 .container {
-    background: transparent url('../../../public/LANDPAGE/logo_vulpes_computador.jpeg') 0% 0% no-repeat padding-box;
-    background-size: contain;
-    background-position: 100% bottom;
-
-    height: auto;
-    width: 100vw;
+    background: #fff8e3 url('../../../public/LANDPAGE/logo_vulpes_computador.jpeg') no-repeat bottom right;
+    background-size: 50% auto;
+    width: 100%;
+    min-height: 70vh;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    overflow-y: hidden;
-    background-color: #fff8e3;
+    justify-content: center;
+    overflow: hidden;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
     .container {
-        background-size: 56%;
+        background-image: none;
+        min-height: auto;
+        padding-block: 2rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        background-size: contain;
+        min-height: 80vh;
     }
 }

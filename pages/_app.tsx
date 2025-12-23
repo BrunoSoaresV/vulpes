@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 import "../styles/theme.css";
+import Head from 'next/head';
 import { Analytics } from '@vercel/analytics/react';
 import React, { useEffect } from 'react'
 import AOS from 'aos';
@@ -18,10 +19,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Component {...pageProps} />
       <Analytics />
     </>
   );
+
 }
 
 export default MyApp;

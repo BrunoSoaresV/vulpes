@@ -1,74 +1,71 @@
 .container {
     background-color: white;
-    width: 100vw;
-    height: 80rem;
+    width: 100%;
+    height: auto;
+    min-height: 40rem;
     position: relative;
+    padding-top: 4rem;
 }
 
 .float__card {
     position: absolute;
     top: -1.6rem;
-    width: 120rem;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 .slider__card {
     background-color: var(--black-background);
-    padding-block: 1.4rem;
-    position: absolute;
-    animation: scroll 38s linear infinite;
+    padding-block: 1rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    width: max-content;
+    animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
-    0% {left: 0;}
-	100% {left: -119%;}
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.box__card {
-    width: 25rem;
-    color: white;
-    font-size: 0.8rem;
-}
-
+.box__card,
 .box__card__small {
-    width: 16rem;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
 }
 
 .box__icon {
     color: var(--text-blue-color);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
-@media (max-width: 1080px) {
+/* Tablet and Desktop */
+@media (min-width: 768px) {
     .container {
-        height: fit-content;
+        min-height: 60rem;
+        padding-top: 6rem;
     }
-}
 
-@media (max-width: 700px) {
     .slider__card {
-        padding-block: .8rem;
+        padding-block: 1.5rem;
     }
 
-    @keyframes scroll {
-        0% {left: 0;}
-        100% {left: -86%;}
-    }
-
-    .box__card {
-        font-size: .5rem;
-        width: 16rem;
-    }
-    
+    .box__card,
     .box__card__small {
-        font-size: .5rem;
-        width: 12rem;
+        font-size: 0.9rem;
+    }
+
+    .box__icon {
+        font-size: 1.5rem;
     }
 }
