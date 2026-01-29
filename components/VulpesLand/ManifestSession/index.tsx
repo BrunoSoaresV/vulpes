@@ -1,7 +1,6 @@
 import './styles.module.css';
 import styles from './styles.module.css';
 import Image from 'next/image';
-import pic_rebecca from '../../../public/LANDPAGE/Rebecca-374-1PB.jpg';
 import sparkles from '../../../public/LANDPAGE/sparkles.png';
 import { VscVerifiedFilled } from "react-icons/vsc";
 
@@ -9,14 +8,7 @@ const ManifestSession = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.rebecca__pic}>
-        <Image
-          src={pic_rebecca}
-          alt="foto da Rebecca"
-          width={350}
-          height={500}
-        />
-      </div>
+      
 
       {/* <div className={styles.main__box}>
         <div className={styles.know__more__session}>
