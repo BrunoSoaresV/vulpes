@@ -9,7 +9,6 @@ import journeyImg from '../../../public/LANDPAGE/trailsContent/pic-pc-with-time.
 import overseasImg from '../../../public/LANDPAGE/trailsContent/hands-with-passport.jpg';
 import paceImg from '../../../public/LANDPAGE/trailsContent/mug-and-plants.jpg';
 import businessClubImg from '../../../public/LANDPAGE/trailsContent/hotel.jpg';
-
 import {
   jouneyContact,
   overseasContact,
