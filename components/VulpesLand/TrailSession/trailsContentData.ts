@@ -3,21 +3,24 @@ import { StaticImageData } from 'next/image';
 import journeyImgIcon from '../../../public/LANDPAGE/icons/journey.png'
 import overseasImgIcon from '../../../public/LANDPAGE/icons/overseas.png'
 import paceImgIcon from '../../../public/LANDPAGE/icons/pro-ace.png'
-import impulseImgIcon from '../../../public/LANDPAGE/icons/impulse.png'
 import businessClubImgIcon from '../../../public/LANDPAGE/icons/business-class.png'
 
 import journeyImg from '../../../public/LANDPAGE/trailsContent/pic-pc-with-time.jpg';
 import overseasImg from '../../../public/LANDPAGE/trailsContent/hands-with-passport.jpg';
 import paceImg from '../../../public/LANDPAGE/trailsContent/mug-and-plants.jpg';
-import impulseImg from '../../../public/LANDPAGE/trailsContent/Rebecca-520-1.jpg';
 import businessClubImg from '../../../public/LANDPAGE/trailsContent/hotel.jpg';
-import { jouneyContact, overseasContact, proAceContact, proBusinessMasterClass, proConsultoriaVlps } from '../../../public/Assets/Contact-Agent';
+
+import {
+  jouneyContact,
+  overseasContact,
+  proAceContact,
+  proBusinessMasterClass
+} from '../../../public/Assets/Contact-Agent';
 
 enum PROGRAM {
   JOURNEY = 'Journey',
   OVERSEAS = 'Overseas',
   PRO_ACE = 'Pro Ace',
-  CONSULTORIA_VLPS = 'Consultoria VLPS',
   BUSINESS_MASTERCLASS = 'Business Masterclass',
 }
 
@@ -76,6 +79,7 @@ export const choseTrail = (props: IndividualTrailContentProps) => {
         imgHeight: 520
       } as IndividualContent;
     }
+
     case 1: {
       return {
         name: PROGRAM.OVERSEAS,
@@ -102,6 +106,7 @@ export const choseTrail = (props: IndividualTrailContentProps) => {
         imgHeight: 500
       } as IndividualContent;
     }
+
     case 2: {
       return {
         name: PROGRAM.PRO_ACE,
@@ -128,6 +133,7 @@ export const choseTrail = (props: IndividualTrailContentProps) => {
         imgHeight: 480
       } as IndividualContent;
     }
+
     case 3: {
       return {
         name: PROGRAM.BUSINESS_MASTERCLASS,
@@ -149,29 +155,6 @@ export const choseTrail = (props: IndividualTrailContentProps) => {
         image: businessClubImg,
         imgWidth: 420,
         imgHeight: 420
-      } as IndividualContent;
-    }
-    case 4: {
-      return {
-        name: PROGRAM.CONSULTORIA_VLPS,
-        iconPath: impulseImgIcon,
-        title: 'Programa de Mentoria de Aceleração Comunicativa',
-        description: [
-          [
-            { tag: 'p', text: `A consultoria estratégica da Vulpes é o programa para você que já fala inglês, quer levar a comunicação a um patamar de excelência e está disposto a seguir as orientações para aprimorar sua comunicação por conta própria.` },
-          ],
-          [
-            { tag: 'p', text: 'Esta é sua única oportunidade de ser atendido pela CEO da Vulpes, Rebecca, que trilhou uma carreira de sucesso como professora de inglês por dez anos antes de se dedicar exclusivamente aos negócios.' },
-          ],
-          [
-            { tag: 'p', text: 'Na consultoria estratégica você recebe insights e direcionamentos para se comunicar com eficácia e precisão onde você estiver. Sua comunicação transformada em até 5 sessões.' },
-          ]
-        ],
-        buttonTitle: 'Acessar os insights da CEO',
-        buttonLink: proConsultoriaVlps,
-        image: impulseImg,
-        imgWidth: 350,
-        imgHeight: 520
       } as IndividualContent;
     }
   }
