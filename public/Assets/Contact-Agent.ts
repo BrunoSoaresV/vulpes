@@ -1,17 +1,30 @@
-export const contactAgent =
-  'https://wa.me/5595984250254';
+const whatsappNumber = '5595984250254';
 
-export const jouneyContact =
-  'https://wa.me/5595984250254?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs%20da%20Vulpes';
+const createWhatsAppLink = (message?: string): string => {
+  const baseUrl = `https://wa.me/${whatsappNumber}`;
 
-export const overseasContact =
-  'https://wa.me/5595984250254?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Overseas';
+  if (!message) {
+    return baseUrl;
+  }
 
-export const proAceContact =
-  'https://wa.me/5595984250254?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Pro%20Ace';
+  return `${baseUrl}?text=${encodeURIComponent(message)}`;
+};
+
+export const contactAgent = createWhatsAppLink();
+
+export const jouneyContact = createWhatsAppLink(
+  'Olá! Gostaria de saber mais sobre as aulas de inglês da Vulpes'
+);
+
+export const overseasContact = createWhatsAppLink(
+  'Olá! Gostaria de saber mais informações sobre o Overseas'
+);
+
+export const proAceContact = createWhatsAppLink(
+  'Olá! Gostaria de saber mais informações sobre o Pro Ace'
+);
 
 export const proBusinessMasterClass =
   'https://chk.eduzz.com/1897833';
 
-export const proConsultoriaVlps =
-  'https://wa.me/5595984250254';
+export const proConsultoriaVlps = createWhatsAppLink();
